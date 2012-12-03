@@ -20,8 +20,8 @@ class UnderSampler(BaseEstimator):
         for i in range(n_samples):
             if y[i] > 0:
                 positives.append(i)
-        else:
-            negatives.append(i)
+            else:
+                negatives.append(i)
         counter_samples = []
         if num_neg > num_pos:
             for i in range(len(positives)):
